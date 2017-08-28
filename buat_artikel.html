@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">	
-	<title>Masuk</title>
+	<title>Buat Artikel</title>
 		
 	<link rel="shortcut icon" href="images/favicon.png">
     <link href="libraries/bootstrap/bootstrap.min.css" rel="stylesheet" />
@@ -19,6 +19,7 @@
     <link href="css/components.css" rel="stylesheet" />
 	<link href="style.css" rel="stylesheet" />
     <link href="css/media.css" rel="stylesheet" />
+	<link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -93,92 +94,85 @@
 		</div><!-- menu-block /- -->
 	</header>
 	<!-- Header Section /- -->
-	
+			
 	<!-- Container -->
 	<div class="container">
 		<div class="row">
+			<div class="col-md-2">
+			</div>
 			<!-- col-md-8 -->
 			<div class="col-md-8">
-				<h2>Developer</h2>
-				<p>
-					IGRS (Indonesia Game Rating System) atau Klasifikasi Permainan Interaktif Elektronik. IGRS merupakan implemetasi peraturan Menteri Komunikasi dan Informatika Republik Indonesia nomor 11 tahun 2016 tentang Klasifikasi Permainan Interaktif Elektronik</p>
-
-				<p>	Klasifikasi Permainan Interaktif  Elektronik berdasarkan :</p>
-
-				<p>	1. Kategori konten
-
-					Rokok, minuman keras, dan narkotika, psikotropika dan zat adiktif lainnya;;
-					Kekerasan;
-					Darah, mutilasi, dan kanibalisme;
-					Penggunaan bahasa;
-					Penampilan tokoh;
-					Seksual;
-					Penyimpangan seksual;
-					Simulasi judi;
-					Horor; dan
-					Interaksi daring (dalam jaringan).</p>
-					
-				<p>	2. Kelompok usia pengguna
-
-					Kelompok usia 3+
-					Kelompok usia 7+
-					Kelompok usia 13+
-					Kelompok usia 18+ dan
-					Kelompok pengguna semua usia.</p>
+				<section class="content">
+			      <!-- Main row -->
+			      <div class="box box-info">
+			        <div class="box-body">
+			          <div class="alert alert-warning" role="alert">
+			            <i class="fa fa-info-circle hint"></i> Ukuran Gambar Maksimal 300KB
+			          </div>
+			      
+			          <form class="form-horizontal">  
+			          	<div class="form-group">
+			              <label for="studio" class="col-sm-2 control-label">Kategori</label>
+			              <div class="col-sm-4">
+			                <select class="form-control" id="">
+			                <option></option>
+			                <option>Game</option>
+			                <option>Kebijakan</option>
+			                <option>Industri Game</option>
+			              </select>
+			              </div>
+			            </div>     
+			            <div class="form-group">
+			              <label for="judul" class="col-sm-2 control-label">Judul berita</label>
+			              <div class="col-sm-10">
+			                <input type="text" class="form-control" placeholder="">
+			              </div>
+			            </div>
+			            <div class="form-group">
+			              <label for="gambar" class="col-sm-2 control-label">Gambar</label>
+			              <div class="col-sm-10">
+			                <div class="input-group input-group-sm col-md-8 clearfix">
+			                  <input name="profile" type="file" class="form-control" />
+			                  <span class="input-group-btn">
+			                    <input type="submit" value="Upload" class="btn btn-info btn-flat" />
+			                  </span>
+			                </div>
+			              </div>
+			            </div>
+			            <div class="form-group">
+		                  <label for="inputIsi" class="col-sm-2 control-label">Isi</label>
+		                  <div class="col-sm-10">
+		                    <div class="box">
+		                      <form>
+		                        <textarea class="textarea" placeholder="" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+		                      </form>
+		                    </div>
+		                  </div>
+		                </div>
+			            <div class="form-group">
+			              <label for="referensi" class="col-sm-2 control-label">Referensi</label>
+			              <div class="col-sm-10">
+			                <input type="text" class="form-control" placeholder="http://www.lalala.com">
+			              </div>
+			            </div>
+			            <br><br>
+			            <div class="form-group">
+			            	<div class="col-md-12 text-center">
+					        	<div class="box-footer form-inline">
+					              <button type="submit" class="btn btn-primary">Batal</button>
+					              <button type="submit" class="btn btn-primary">Simpan</button>
+					              <button type="submit" class="btn btn-primary">Lihat</button>
+					            </div>
+				            </div>
+			            </div>
+			          </form> 
+			        </div>
+			      </div>
+			      <!-- /.row (main row) -->
+			    </section>
+			</div><!-- col-md-8 /- -->
+			<div class="col-md-2">
 			</div>
-			<!-- col-md-8 /- -->
-		
-			<!-- col-md-4 -->
-			<div class="col-md-4 col-sm-6" style="">
-				<h1>MASUK</h1>
-	            <form class="form-signin>
-	                <span id="reauth-email" class="reauth-email"></span>
-	                <div class="form-group">
-	                    <label for="email" class="cols-sm-2 control-label">Email</label>
-	                    <div class="cols-sm-10">
-	                        <div class="input-group">
-	                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-	                            <input type="email" id="inputEmail" class="form-control" placeholder="Masukkan Email" required autofocus>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="form-group">
-	                    <label for="email" class="cols-sm-2 control-label">Kata Sandi</label>
-	                    <div class="cols-sm-10">
-	                        <div class="input-group">
-	                            <span class="input-group-addon"><i class="fa fa-lock fa" aria-hidden="true"></i></span>
-	                            <input type="password" id="inputPassword" class="form-control" placeholder="Maksukkan Kata Sandi" required>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="row">
-				        <div class="col-xs-8">
-				          <div class="checkbox icheck">
-				            <label>
-				              <input type="checkbox"> Ingat Saya
-				            </label>
-				          </div>
-				        </div>
-				        <!-- /.col -->
-				        <div class="col-xs-4">
-				          <button type="submit" class="btn btn-primary btn-block btn-flat">Masuk</button>
-				        </div>
-				        <!-- /.col -->
-				     </div>
-
-				    <div class="social-auth-links text-center">
-				      <hr>
-				      <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Masuk dengan Facebook</a>
-				      <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Masuk dengan
-				        Google+</a>
-				    </div>
-				    <!-- /.social-auth-links -->
-
-				    <a href="#">Lupa Kata Sandi?</a><br>
-				    <a href="daftar.html" class="text-center">Daftar</a>
-	                
-	            </form><!-- /form -->
-			</div><!-- col-md-4 /- -->
 		</div>
 	</div><!-- container /- -->
 	
@@ -223,15 +217,14 @@
 	<!-- Footer Section /- -->
 	
 	<!-- jQuery Include -->
-	<script src="libraries/jquery.min.js"></script>	
-	<script src="libraries/jquery.easing.min.js"></script><!-- Easing Animation Effect -->
-	<script src="libraries/bootstrap/bootstrap.min.js"></script> <!-- Core Bootstrap v3.2.0 -->
+	<script src="libraries/jquery.min.js"></script>
 	<script src="libraries/jquery.animateNumber.min.js"></script> <!-- Used for Animated Numbers -->
 	<script>
 		new UISearch( document.getElementById( 'sb-search' ) );
 	</script>
 	<script type="text/javascript" src="libraries/jssor.js"></script>
 	<script type="text/javascript" src="libraries/jquery.marquee.js"></script>
+	<script src="developer/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
 	<!-- Customized Scripts -->
 	<script src="js/functions.js"></script>
 	
