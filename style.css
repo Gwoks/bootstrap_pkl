@@ -298,7 +298,7 @@ a {
 /* Top Header */
 .top-header,
 .menu-block {
-    background-color: #3f51b5;
+    background-color: #2f7eba;
     width: 100%;
 }
 
@@ -390,7 +390,7 @@ a {
 .menu-block .navbar-default .navbar-nav > li > a:hover,
 .menu-block .follow,
 .latest-update h3 {
-    background-color: #FF4081;
+    background-color: #e94135;
 }
 
 .menu-block .follow {
@@ -960,7 +960,7 @@ a {
 .political-world-section {
     position: relative;
 	padding-top: 20px;
-    background-color: lightgoldenrodyellow;
+    background-color: white;
 }
 
 .political-world-section .post-box {

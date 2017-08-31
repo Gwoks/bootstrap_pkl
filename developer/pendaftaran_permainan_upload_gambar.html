@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Dashboard Developer</title>
+  <title>Developer | Permainan</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -27,12 +27,8 @@
   <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker-bs3.css">
-  <!-- bootstrap wysihtml5 - text editor -->
-  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
   <!-- bootstrap datepicker -->
   <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
-  <!-- bootstrap wysihtml5 - text editor -->
-  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -113,20 +109,14 @@
         <li class="header">MAIN NAVIGATION</li>
         <li class="active treeview">
           <a href="permainan.html">
-            <i class="fa fa-dashboard"></i>
-            <span>Permainan</span>
+            <i class="fa fa-gamepad"></i>
+            <span href="permainan.html">Permainan</span>
           </a>
         </li>
         <li class="treeview">
           <a href="profil_perusahaan.html">
-            <i class="fa fa-book"></i>
+            <i class="fa fa-user"></i>
             <span>Profil Perusahaan</span>
-          </a>
-        </li>
-        <li class="treeview">
-          <a href="demo_assessment.html">
-            <i class="fa fa-book"></i>
-            <span>Demo Assessment</span>
           </a>
         </li>
         <li class="treeview">
@@ -137,7 +127,7 @@
         </li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-folder"></i>
+            <i class="fa fa-sign-out"></i>
             <span>Keluar</span>
           </a>
         </li>
@@ -153,9 +143,9 @@
       <h2>Form Pendaftaran Permainan Interaktif Elektronik</h2>
         <ol class="breadcrumb">
           <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-          <li class="active">Dashboard</li>
+          <li class="active">Permainan</li>
         </ol>
-      <button class="btn btn-warning">Ukuran file maksimal 500kb</button>
+      <button class="btn btn-warning">Ukuran gambar maksimal 500kb</button>
     </section>
     <!-- Main content -->
     <section class="content">
@@ -164,12 +154,13 @@
         <div class="box-body">
           <form class="form-horizontal">
               <div class="box-body">
+                <h4>Gambar Screenshot Game</h4>
                 <div class="form-group">
                   <label class="col-sm-2 control-label">Gambar 1</label>
                   <div class="col-sm-10">
                     <input type="file" id="inputUpload">
                     <br>
-                    <textarea placeholder="Deskripsi Gambar"></textarea>
+                    <textarea class="textarea" placeholder="" style="width: 50%; height: 100px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                     <br>
                     <button type="submit" class="btn btn-info pull-left">Upload</button>
                   </div>
@@ -180,19 +171,25 @@
                   <div class="col-sm-10">
                     <input type="file" id="inputUpload">
                     <br>
-                    <textarea placeholder="Deskripsi Gambar"></textarea>
+                    <textarea class="textarea" placeholder="" style="width: 50%; height: 100px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                     <br>
                     <button type="submit" class="btn btn-info pull-left">Upload</button>
                   </div>
                 </div>
                 <hr class="featurette-divider" style="padding:0rem; margin:1rem;">
-                <center>
-                  <div class="btn btn-info">Tambah Gambar</div>
-                </center>
-                <div>
-                  <blockquote>
-                    <label><input type="checkbox" class=""> Saya menyatakan bahwa data yang saya masukkan benar dan telah dibaca Terms and Conditions</label>
-                  </blockquote>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">Gambar 3</label>
+                  <div class="col-sm-10">
+                    <input type="file" id="inputUpload">
+                    <br>
+                    <textarea class="textarea" placeholder="" style="width: 50%; height: 100px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                    <br>
+                    <button type="submit" class="btn btn-info pull-left">Upload</button>
+                  </div>
+                </div>
+                <hr class="featurette-divider" style="padding:0rem; margin:1rem;">
+                <div class="form-group text-center">
+                  <input type="checkbox" value="1"> Saya menyatakan bahwa data yang saya masukkan benar dan telah membaca<a href="#"><strong>Terms and Conditions</strong></a>
                 </div>
               </div>
               
@@ -259,8 +256,6 @@
 <script src="plugins/daterangepicker/daterangepicker.js"></script>
 <!-- datepicker -->
 <script src="plugins/datepicker/bootstrap-datepicker.js"></script>
-<!-- Bootstrap WYSIHTML5 -->
-<script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
 <!-- Slimscroll -->
 <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
@@ -276,7 +271,5 @@
 <script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
 <!-- bootstrap datepicker -->
 <script src="plugins/datepicker/bootstrap-datepicker.js"></script>
-<!-- Bootstrap WYSIHTML5 -->
-<script src="../../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
 </body>
 </html>
