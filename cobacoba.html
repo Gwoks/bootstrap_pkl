@@ -14,6 +14,9 @@
 		
 	<link rel="shortcut icon" href="images/favicon.png">
     <link href="libraries/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <linK href="libraries/owl-carousel/owl.carousel.css" rel="stylesheet" /> <!-- Core Owl Carousel CSS File  *	v1.3.3 -->
+    <linK href="libraries/owl-carousel/owl.theme.css" rel="stylesheet" /> <!-- Core Owl Carousel CSS Theme  File  *	v1.3.3 -->
+	<link href="libraries/flexslider/flexslider.css" rel="stylesheet" /> <!-- flexslider -->
 	<link href="libraries/fonts/font-awesome.min.css" rel="stylesheet" />
 	<link href="libraries/animate/animate.min.css" rel="stylesheet" />
     <link href="css/components.css" rel="stylesheet" />
@@ -54,6 +57,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3 search-follow ow-right-padding">
+						<a href="masuk.html" class="follow"><i class="glyphicon glyphicon-log-in"></i> Masuk</a>
+						<a href="daftar.html" class="follow"><i class="glyphicon glyphicon-user"></i> Daftar</a>
 						<div id="sb-search" class="sb-search">
 							<form>
 								<input class="sb-search-input" placeholder="Search" type="text" value="" name="search" id="search">
@@ -93,97 +98,98 @@
 		</div><!-- menu-block /- -->
 	</header>
 	<!-- Header Section /- -->
-			
+
 	<!-- Container -->
 	<div class="container">
-		<center><h1>DAFTAR</h1></center><br>
-	    <div class="row">
-			<!-- col-md-8 -->
-			<div class="col-md-8 col-sm-6">
-				
-				<form class="form-signin">
-	                <span id="reauth-email" class="reauth-email"></span>
-	                <div class="form-group">
-	                    <label for="name" class="cols-sm-2 control-label">Nama Lengkap</label>
-	                    <div class="cols-sm-10">
-	                        <div class="input-group">
-	                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-	                            <input type="name" class="form-control" name="name" id="inputName"  placeholder="Masukkan Nama Lengkap" required autofocus>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="form-group">
-	                    <label for="telepon" class="cols-sm-2 control-label">Nomor Telepon</label>
-	                    <div class="cols-sm-10">
-	                        <div class="input-group">
-	                            <span class="input-group-addon"><i class="fa fa-phone fa" aria-hidden="true"></i></span>
-	                            <input type="telepon" class="form-control" name="telepon" id="inputTelepon"  placeholder="Masukkan Nomor Telepon"/ required>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="form-group">
-	                    <label for="email" class="cols-sm-2 control-label">Email</label>
-	                    <div class="cols-sm-10">
-	                        <div class="input-group">
-	                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-	                            <input type="email" id="inputEmail" class="form-control" placeholder="Masukkan Email" required>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="form-group">
-	                    <label for="password" class="cols-sm-2 control-label">Kata Sandi</label>
-	                    <div class="cols-sm-10">
-	                        <div class="input-group">
-	                            <span class="input-group-addon"><i class="fa fa-lock fa" aria-hidden="true"></i></span>
-	                            <input type="password" id="inputPassword" class="form-control" placeholder="Masukkan Kata Sandi" required>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="form-group">
-	                    <label for="re-password" class="cols-sm-2 control-label">Ulangi Kata Sandi</label>
-	                    <div class="cols-sm-10">
-	                        <div class="input-group">
-	                            <span class="input-group-addon"><i class="fa fa-lock fa" aria-hidden="true"></i></span>
-	                            <input type="re-password" id="inputRe-Password" class="form-control" placeholder="Masukkan Ulang Kata Sandi" required>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="form-group">
-			            <label for="captcha" class="cols-sm-2 control-label">Daftar Sebagai</label>
-			                    
-			                <div class="cols-sm-10">
-			                    <div class="radio radio-success radio-inline">
-							        <input type="radio" id="inlineRadio1" value="1" name="bn">
-							        <label for="inlineRadio1">Developer</label>
-							    </div>
-							    <div class="radio radio-danger radio-inline">
-							        <input type="radio" id="inlineRadio2" value="0" name="bn">
-							        <label for="inlineRadio2">Kontributor</label>
-							    </div>
-							</div>
-			        </div>
-	                <div class="form-group">
-	                    <label for="captcha" class="cols-sm-2 control-label">Captcha</label>
-	                    <div class="cols-sm-10">
-	                    	<div class="input-group">
-	                			<img src="images/captcha.png">
-	                			<input type="captcha" id="inputCaptcha" class="form-control" placeholder="Masukkan Captcha">
-                			</div>
-	                    </div>
-	                </div>
-	                <a href="#" button type="button"  class="btn btn-info pull-left" id="daftarskon" style="display: none;">Daftar Sebagai Kontributor</a>
-	                <a href="#" button type="button"  class="btn btn-info pull-left" id="daftarsdev" style="display: none;">Daftar Sebagai Developer</a>
-	            </form><!-- /form -->
-			</div><!-- col-md-6 /- -->
-			<div class="col-md-4">
-				<ul class="nav nav-tabs nav-justified">
-				    <li class="active"><a data-toggle="tab" href="#developer">Developer</a></li>
-				    <li><a data-toggle="tab" href="#kontributir">Kontributor</a></li>
-				</ul>
+  	<center><h1>Daftar IGRS</h1></center><br>
+      <div class="row">
+					<!-- col-md-8 -->
+					<div class="col-md-8 col-sm-6">
+						<br>
+						<form class="form-signin">
+			                <span id="reauth-email" class="reauth-email"></span>
+			                <div class="form-group">
+			                    <label for="name" class="cols-sm-2 control-label">Nama Lengkap</label>
+			                    <div class="cols-sm-10">
+			                        <div class="input-group">
+			                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+			                            <input type="name" class="form-control" name="name" id="inputName"  placeholder="Masukkan Nama Lengkap" required autofocus>
+			                        </div>
+			                    </div>
+			                </div>
+			                
+			                <div class="form-group">
+			                    <label for="telepon" class="cols-sm-2 control-label">Nomor Telepon</label>
+			                    <div class="cols-sm-10">
+			                        <div class="input-group">
+			                            <span class="input-group-addon"><i class="fa fa-phone fa" aria-hidden="true"></i></span>
+			                            <input type="telepon" class="form-control" name="telepon" id="inputTelepon"  placeholder="Masukkan Nomor Telepon"/ required>
+			                        </div>
+			                    </div>
+			                </div>
+			                <div class="form-group">
+			                    <label for="email" class="cols-sm-2 control-label">Email</label>
+			                    <div class="cols-sm-10">
+			                        <div class="input-group">
+			                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+			                            <input type="email" id="inputEmail" class="form-control" placeholder="Masukkan Email" required>
+			                        </div>
+			                    </div>
+			                </div>
+			                <div class="form-group">
+			                    <label for="password" class="cols-sm-2 control-label">Kata Sandi</label>
+			                    <div class="cols-sm-10">
+			                        <div class="input-group">
+			                            <span class="input-group-addon"><i class="fa fa-lock fa" aria-hidden="true"></i></span>
+			                            <input type="password" id="inputPassword" class="form-control" placeholder="Masukkan Kata Sandi" required>
+			                        </div>
+			                    </div>
+			                </div>
+			                <div class="form-group">
+			                    <label for="re-password" class="cols-sm-2 control-label">Ulangi Kata Sandi</label>
+			                    <div class="cols-sm-10">
+			                        <div class="input-group">
+			                            <span class="input-group-addon"><i class="fa fa-lock fa" aria-hidden="true"></i></span>
+			                            <input type="re-password" id="inputRe-Password" class="form-control" placeholder="Masukkan Ulang Kata Sandi" required>
+			                        </div>
+			                    </div>
+			                </div>
+			                <div class="form-group">
+			                    <label for="captcha" class="cols-sm-2 control-label">Daftar Sebagai</label>
+			                    <div class="cols-sm-10">
+			                    	<label class="radio-inline">
+								      <input type="radio" id="daftarsebagai0" value="0" name="optradio">Developer
+								    </label>
+								    <label class="radio-inline">
+								      <input type="radio" id="daftarsebagai1" value="1" name="optradio">Kontributor
+								    </label>
+			                    </div>
+			                </div>
+			                <div class="form-group">
+			                    <label for="captcha" class="cols-sm-2 control-label">Captcha</label>
+			                    <div class="cols-sm-10">
+			                    	<div class="input-group">
+			                			<img src="images/captcha.png">
+			                			<input type="captcha" id="inputCaptcha" class="form-control" placeholder="Masukkan Captcha">
+		                			</div>
+			                    </div>
+			                </div>
+			                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Daftar</button>
+			            </form><!-- /form -->
 
-				<div class="tab-content">
-    				<div id="developer" class="tab-pane fade in active">
-    					<br>
+			            <div class="radio radio-success radio-inline">
+        <input type="radio" id="inlineRadio1" value="1" name="bn">
+        <label for="inlineRadio1">Yes</label>
+      </div>
+      <div class="radio radio-danger radio-inline">
+        <input type="radio" id="inlineRadio2" value="0" name="bn">
+        <label for="inlineRadio2">No</label>
+      </div>
+					</div><!-- col-md-8 /- -->
+				
+					<!-- col-md-4 -->
+					<div class="col-md-4 col-sm-6">
+						<br>
 						<h3>Developer</h3>
 						<p>Developer dapat mendaftarkan permainannya dan mendapatkan rating game
 							 berdasarkan klasifikasi IGRS</p>
@@ -209,24 +215,27 @@
 							Kelompok usia 13+
 							Kelompok usia 18+ dan
 							Kelompok pengguna semua usia.</p>
-    				</div>
-    			
+						
+					</div><!-- col-md-4 /- -->
+				</div>
 
-    			<div id="kontributir" class="tab-pane fade">
-    					<h3>Kontributor</h3>
-						<p>
-							IGRS (Indonesia Game Rating System) atau Klasifikasi Permainan Interaktif Elektronik. IGRS merupakan implemetasi peraturan Menteri Komunikasi dan Informatika Republik Indonesia nomor 11 tahun 2016 tentang Klasifikasi Permainan Interaktif Elektronik</p>
-						<p>
-							Kontributor dapat membuat berita dan artikel pada laman "Berita" setelah disetujui oleh 
-							admin IGRS
-						</p>
-    			</div>
-
-    			</div>
-
-			</div>
-		</div>
-	</div><!-- container /- -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Incorrect Certificate Information</h4>
+              </div>
+              <div class="modal-body" style="text-align:center;">
+                <p>Please contact Nathan Finch at PPE</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
 	
 	<!-- Footer Section -->
 	<div id="footer-section" class="footer-section">
@@ -284,19 +293,14 @@
 	<script>
 		new UISearch( document.getElementById( 'sb-search' ) );
 
-		$(document).ready(function() {
-		$("input[name$='bn']").click(function() {
-		    var radio_value = $(this).val();
-		    if ($(this).is(':checked') && radio_value == '0') {
-		      $("#daftarskon").fadeIn("slow");
-		      $("#daftarsdev").fadeOut("slow");
-		    } else if ($(this).is(':checked') && radio_value == '1') {
-		      $("#daftarsdev").fadeIn("slow");
-		      $("#daftarskon").fadeOut("slow");
-		    }
-		  });
+		$('input[name="bn"]').change(function() {
+		   if($(this).is(':checked') && $(this).val() == '0') {
+		   		$('#myModal').modal('show');
+		   }
+		   if($(this).is(':checked') && $(this).val() == '1') {
+		   		$('#myModal').modal('show');
+		   }
 		});
-
 	</script>
 	<script type="text/javascript" src="libraries/jssor.js"></script>
     <script type="text/javascript" src="libraries/jssor.slider.min.js"></script>
