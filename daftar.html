@@ -150,6 +150,20 @@
 	                    </div>
 	                </div>
 	                <div class="form-group">
+			            <label for="captcha" class="cols-sm-2 control-label">Daftar Sebagai</label>
+			                    
+			                <div class="cols-sm-10">
+			                    <div class="radio radio-success radio-inline">
+							        <input type="radio" id="inlineRadio1" value="1" name="bn">
+							        <label for="inlineRadio1">Developer</label>
+							    </div>
+							    <div class="radio radio-danger radio-inline">
+							        <input type="radio" id="inlineRadio2" value="0" name="bn">
+							        <label for="inlineRadio2">Kontributor</label>
+							    </div>
+							</div>
+			        </div>
+	                <div class="form-group">
 	                    <label for="captcha" class="cols-sm-2 control-label">Captcha</label>
 	                    <div class="cols-sm-10">
 	                    	<div class="input-group">
@@ -158,13 +172,74 @@
                 			</div>
 	                    </div>
 	                </div>
-	                <a href="#" class="btn btn-info pull-left" type="submit">Daftar</a>
+	                <a href="#" button type="button"  class="btn btn-info pull-left" id="daftarskon" style="display: none;">Daftar Sebagai Kontributor</a>
+	                <a href="#" button type="button"  class="btn btn-info pull-left" id="daftarsdev" style="display: none;">Daftar Sebagai Developer</a>
 	            </form><!-- /form -->
 			</div><!-- col-md-6 /- -->
 			<div class="col-md-3">
 			</div>
 		</div>
 	</div><!-- container /- -->
+
+	<div class="modal fade" id="modalDeveloper" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Daftar Sebagai Developer</h4>
+              </div>
+              <div class="modal-body" style="text-align:left;">
+                		<p>Developer dapat mendaftarkan permainannya dan mendapatkan rating game
+							 berdasarkan klasifikasi IGRS</p>
+						<p>	Klasifikasi Permainan Interaktif  Elektronik berdasarkan :</p>
+
+						<p>	1. Kategori konten
+
+							Rokok, minuman keras, dan narkotika, psikotropika dan zat adiktif lainnya;;
+							Kekerasan;
+							Darah, mutilasi, dan kanibalisme;
+							Penggunaan bahasa;
+							Penampilan tokoh;
+							Seksual;
+							Penyimpangan seksual;
+							Simulasi judi;
+							Horor; dan
+							Interaksi daring (dalam jaringan).</p>
+							
+						<p>	2. Kelompok usia pengguna
+
+							Kelompok usia 3+
+							Kelompok usia 7+
+							Kelompok usia 13+
+							Kelompok usia 18+ dan
+							Kelompok pengguna semua usia.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="modal fade" id="modalKontributor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Daftar Sebagai Kontributor</h4>
+              </div>
+              <div class="modal-body" style="text-align:center;">
+                
+						<p>Kontributor dapat menambahkan artikel pada laman Artikel IGRS. 
+						artikel dapat muncul setelah mendapat persetujuan dari admin IGRS</p>
+						            
+						</div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+    </div>
 	
 	<!-- Footer Section -->
 	<div id="footer-section" class="footer-section">
@@ -221,6 +296,30 @@
 	<script src="libraries/expanding-search/uisearch.js"></script> <!-- Core Owl Carousel CSS File  *	v1.3.3 -->
 	<script>
 		new UISearch( document.getElementById( 'sb-search' ) );
+
+		$(document).ready(function() {
+		$("input[name$='bn']").click(function() {
+		    var radio_value = $(this).val();
+		    if ($(this).is(':checked') && radio_value == '0') {
+		      $("#daftarskon").fadeIn("slow");
+		      $("#daftarsdev").fadeOut("slow");
+		    } else if ($(this).is(':checked') && radio_value == '1') {
+		      $("#daftarsdev").fadeIn("slow");
+		      $("#daftarskon").fadeOut("slow");
+		    }
+		  });
+		});
+
+		$('input[name="bn"]').change(function() {
+		   if($(this).is(':checked') && $(this).val() == '1') {
+		   		$('#modalDeveloper').modal('show');
+		   }
+		});
+		$('input[name="bn"]').change(function() {
+		   if($(this).is(':checked') && $(this).val() == '0') {
+		   		$('#modalKontributor').modal('show');
+		   }
+		});
 	</script>
 	<script type="text/javascript" src="libraries/jssor.js"></script>
     <script type="text/javascript" src="libraries/jssor.slider.min.js"></script>
