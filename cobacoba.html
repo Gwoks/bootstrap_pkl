@@ -1,312 +1,117 @@
-<!doctype html>
-<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html class=""> <!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">	
-	<title>Daftar</title>
-		
-	<link rel="shortcut icon" href="images/favicon.png">
-    <link href="libraries/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <linK href="libraries/owl-carousel/owl.carousel.css" rel="stylesheet" /> <!-- Core Owl Carousel CSS File  *	v1.3.3 -->
-    <linK href="libraries/owl-carousel/owl.theme.css" rel="stylesheet" /> <!-- Core Owl Carousel CSS Theme  File  *	v1.3.3 -->
-	<link href="libraries/flexslider/flexslider.css" rel="stylesheet" /> <!-- flexslider -->
-	<link href="libraries/fonts/font-awesome.min.css" rel="stylesheet" />
-	<link href="libraries/animate/animate.min.css" rel="stylesheet" />
-    <link href="css/components.css" rel="stylesheet" />
-	<link href="style.css" rel="stylesheet" />
-    <link href="css/media.css" rel="stylesheet" />
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="js/html5/html5shiv.min.js"></script>
-      <script src="js/html5/respond.min.js"></script>
-    <![endif]-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> Bootstrap Step Wizard</title>
+  <meta name="Generator" content="http://www.amitpatil.me">
+  <meta name="Author" content="Amit Patil">
+  <meta name="Keywords" content="jquery,bootstrap,step form, step, form, wizard, script, form script, step form script, jQuery Wizard, jQuery Tabs, 
+    jQuery Steps, HTML5, JavaScript, Accessibility, jQuery Form Wizard, jQuery Form Validation, jQuery Step by Step">
+  <meta name="Description" content="A simple and easy multi step form script with bootstrap and jquery">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    
-</head>
-<body data-offset="200" data-spy="scroll" data-target=".primary-navigation">
-	
-	<a id="top"></a>
-	
-	<!-- Header Section /- -->
-	<header id="header" class="header">
-		<!-- logo-add-block -->
-		<div class="logo-add-block">
-			<!-- container -->
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 logo-block col-sm-3">
-						<a href="home.html"><img src="images/logo.png" alt="logo"></a>
-					</div>
-				</div>
-			</div><!-- container /- -->
-		</div><!-- logo-add-block /- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-		<!-- menu-block -->
-		<div class="menu-block">
-			<!-- container -->
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 search-follow ow-right-padding">
-						<a href="masuk.html" class="follow"><i class="glyphicon glyphicon-log-in"></i> Masuk</a>
-						<a href="daftar.html" class="follow"><i class="glyphicon glyphicon-user"></i> Daftar</a>
-						<div id="sb-search" class="sb-search">
-							<form>
-								<input class="sb-search-input" placeholder="Search" type="text" value="" name="search" id="search">
-								<button class="sb-search-submit"><i class="fa fa-search"></i></button>
-								<span class="sb-icon-search"></span>
-							</form>
-						</div>
-					</div>
-					<div class="col-md-12">
-						<nav class="navbar navbar-default">
-							<div class="navbar-header">
-								<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-								<a href="index.html"><img src="images/responsive-logo.png" alt="logo" /></a>
-							</div>
-							<div class="navbar-collapse collapse" id="navbar">
-								<ul class="nav navbar-nav">
-									<li>
-										<a class="nav-brand"><i class="fa fa-home"></i>
-										</a>
-									</li>
-									<li><a href="berita.html">Berita</a></li>
-									<li><a href="direktori.html">Direktori</a></li>
-									<li><a href="pengaduan.html">Pengaduan</a></li>
-									<li><a href="faq.html">Pertanyaan Umum</a></li>
-									<li><a href="hubungi_kami.html">Hubungi Kami</a></li>
-								</ul>
-							</div><!-- .nav-collapse /- -->
-						</nav> <!-- nav /- -->
-					</div>
-				</div>
-			</div><!-- container /- -->
-		</div><!-- menu-block /- -->
-	</header>
-	<!-- Header Section /- -->
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-	<!-- Container -->
-	<div class="container">
-  	<center><h1>Daftar IGRS</h1></center><br>
-      <div class="row">
-					<!-- col-md-8 -->
-					<div class="col-md-8 col-sm-6">
-						<br>
-						<form class="form-signin">
-			                <span id="reauth-email" class="reauth-email"></span>
-			                <div class="form-group">
-			                    <label for="name" class="cols-sm-2 control-label">Nama Lengkap</label>
-			                    <div class="cols-sm-10">
-			                        <div class="input-group">
-			                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-			                            <input type="name" class="form-control" name="name" id="inputName"  placeholder="Masukkan Nama Lengkap" required autofocus>
-			                        </div>
-			                    </div>
-			                </div>
-			                
-			                <div class="form-group">
-			                    <label for="telepon" class="cols-sm-2 control-label">Nomor Telepon</label>
-			                    <div class="cols-sm-10">
-			                        <div class="input-group">
-			                            <span class="input-group-addon"><i class="fa fa-phone fa" aria-hidden="true"></i></span>
-			                            <input type="telepon" class="form-control" name="telepon" id="inputTelepon"  placeholder="Masukkan Nomor Telepon"/ required>
-			                        </div>
-			                    </div>
-			                </div>
-			                <div class="form-group">
-			                    <label for="email" class="cols-sm-2 control-label">Email</label>
-			                    <div class="cols-sm-10">
-			                        <div class="input-group">
-			                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-			                            <input type="email" id="inputEmail" class="form-control" placeholder="Masukkan Email" required>
-			                        </div>
-			                    </div>
-			                </div>
-			                <div class="form-group">
-			                    <label for="password" class="cols-sm-2 control-label">Kata Sandi</label>
-			                    <div class="cols-sm-10">
-			                        <div class="input-group">
-			                            <span class="input-group-addon"><i class="fa fa-lock fa" aria-hidden="true"></i></span>
-			                            <input type="password" id="inputPassword" class="form-control" placeholder="Masukkan Kata Sandi" required>
-			                        </div>
-			                    </div>
-			                </div>
-			                <div class="form-group">
-			                    <label for="re-password" class="cols-sm-2 control-label">Ulangi Kata Sandi</label>
-			                    <div class="cols-sm-10">
-			                        <div class="input-group">
-			                            <span class="input-group-addon"><i class="fa fa-lock fa" aria-hidden="true"></i></span>
-			                            <input type="re-password" id="inputRe-Password" class="form-control" placeholder="Masukkan Ulang Kata Sandi" required>
-			                        </div>
-			                    </div>
-			                </div>
-			                <div class="form-group">
-			                    <label for="captcha" class="cols-sm-2 control-label">Daftar Sebagai</label>
-			                    <div class="cols-sm-10">
-			                    	<label class="radio-inline">
-								      <input type="radio" id="daftarsebagai0" value="0" name="optradio">Developer
-								    </label>
-								    <label class="radio-inline">
-								      <input type="radio" id="daftarsebagai1" value="1" name="optradio">Kontributor
-								    </label>
-			                    </div>
-			                </div>
-			                <div class="form-group">
-			                    <label for="captcha" class="cols-sm-2 control-label">Captcha</label>
-			                    <div class="cols-sm-10">
-			                    	<div class="input-group">
-			                			<img src="images/captcha.png">
-			                			<input type="captcha" id="inputCaptcha" class="form-control" placeholder="Masukkan Captcha">
-		                			</div>
-			                    </div>
-			                </div>
-			                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Daftar</button>
-			            </form><!-- /form -->
+ </head>
+ <body>
+   
+   <div class="container">
+  <br><br>
+    <div class="col-md-8 col-md-offset-2">    
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
 
-			            <div class="radio radio-success radio-inline">
-        <input type="radio" id="inlineRadio1" value="1" name="bn">
-        <label for="inlineRadio1">Yes</label>
-      </div>
-      <div class="radio radio-danger radio-inline">
-        <input type="radio" id="inlineRadio2" value="0" name="bn">
-        <label for="inlineRadio2">No</label>
-      </div>
-					</div><!-- col-md-8 /- -->
-				
-					<!-- col-md-4 -->
-					<div class="col-md-4 col-sm-6">
-						<br>
-						<h3>Developer</h3>
-						<p>Developer dapat mendaftarkan permainannya dan mendapatkan rating game
-							 berdasarkan klasifikasi IGRS</p>
-						<p>	Klasifikasi Permainan Interaktif  Elektronik berdasarkan :</p>
+    <div class="step well">
+      Step 1
+    </div>
+    <div class="step well">
+      Step 2
+    </div>
+    <div class="step well">
+      Step 3
+    </div>
+    <div class="step well">
+      Step 4
+    </div>
+    <div class="step well">
+      Step 5
+    </div>
+    <div class="step well">
+      Step 6
+    </div>
 
-						<p>	1. Kategori konten
+    <button class="action back btn btn-info">Back</button>
+    <button class="action next btn btn-info">Next</button>
+    <button class="action submit btn btn-success">Submit</button>
+   </div> 
+   </div>
 
-							Rokok, minuman keras, dan narkotika, psikotropika dan zat adiktif lainnya;;
-							Kekerasan;
-							Darah, mutilasi, dan kanibalisme;
-							Penggunaan bahasa;
-							Penampilan tokoh;
-							Seksual;
-							Penyimpangan seksual;
-							Simulasi judi;
-							Horor; dan
-							Interaksi daring (dalam jaringan).</p>
-							
-						<p>	2. Kelompok usia pengguna
-
-							Kelompok usia 3+
-							Kelompok usia 7+
-							Kelompok usia 13+
-							Kelompok usia 18+ dan
-							Kelompok pengguna semua usia.</p>
-						
-					</div><!-- col-md-4 /- -->
-				</div>
-
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Incorrect Certificate Information</h4>
-              </div>
-              <div class="modal-body" style="text-align:center;">
-                <p>Please contact Nathan Finch at PPE</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-</div>
-	
-	<!-- Footer Section -->
-	<div id="footer-section" class="footer-section">
-		<!-- container -->
-		<div class="container">
-			<!-- col-md-4 -->
-			<div class="col-md-4">
-				<aside class="widget widget_about_us">
-					<h3 class="widget-title">Tentang Kami</h3>
-					<p>IGRS (Indonesia Game Rating System) atau Klasifikasi Permainan Interaktif Elektronik. IGRS merupakan implemetasi peraturan Menteri Komunikasi dan Informatika Republik Indonesia nomor 11 tahun 2016 tentang Klasifikasi Permainan Interaktif Elektronik</p>
-				</aside>
-			</div><!-- col-md-4 /- -->
-			
-			<!-- col-md-4 -->
-			<div class="col-md-4">
-				<aside class="widget widget_about_us">
-				<h3 class="widget-title">Alamat</h3>
-					<p>Kementrian Komunikasi dan Informatika</p>
-					<p>Direktorat Pemberdayaan Industri Informatika</p>
-					<p>Jl. Medan Merdeka Barat No. 9, Jakarta 10110</p>
-					<p>021- 3451363</p>
-				</aside>
-			</div>
-			
-			<!-- col-md-4 -->
-			<div class="col-md-4">
-				<aside class="widget widget_about_us">
-					<aside class="widget widget_social_icons">
-					<h3 class="widget-title">Ikuti kami</h3>
-					<ul>
-						<li><a href="#" target="_blank" class="fb"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#" target="_blank" class="tw"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#" target="_blank" class="lin"><i class="fa fa-instagram"></i></a></li>
-					</ul>
-				</aside>
-				</aside>
-			</div>
-		</div><!-- container /- -->
-	</div>
-	<!-- Footer Section /- -->
-	
-	<!-- jQuery Include -->
-	<script src="libraries/jquery.min.js"></script>	
-	<script src="libraries/jquery.easing.min.js"></script><!-- Easing Animation Effect -->
-	<script src="libraries/bootstrap/bootstrap.min.js"></script> <!-- Core Bootstrap v3.2.0 -->
-	<script src="libraries/jquery.animateNumber.min.js"></script> <!-- Used for Animated Numbers -->
-	<script src="libraries/jquery.appear.js"></script> <!-- It Loads jQuery when element is appears -->
-	<script src="libraries/jquery.knob.js"></script> <!-- Used for Loading Circle -->
-	<script src="libraries/wow.min.js"></script> <!-- Use For Animation -->
-	<script src="libraries/flexslider/jquery.flexslider-min.js"></script> <!-- flexslider   -->
-	<script src="libraries/owl-carousel/owl.carousel.min.js"></script> <!-- Core Owl Carousel CSS File  *	v1.3.3 -->
-	<script src="libraries/expanding-search/modernizr.custom.js"></script> <!-- Core Owl Carousel CSS File  *	v1.3.3 -->
-	<script src="libraries/expanding-search/classie.js"></script> <!-- Core Owl Carousel CSS File  *	v1.3.3 -->
-	<script src="libraries/expanding-search/uisearch.js"></script> <!-- Core Owl Carousel CSS File  *	v1.3.3 -->
-	<script>
-		new UISearch( document.getElementById( 'sb-search' ) );
-
-		$('input[name="bn"]').change(function() {
-		   if($(this).is(':checked') && $(this).val() == '0') {
-		   		$('#myModal').modal('show');
-		   }
-		   if($(this).is(':checked') && $(this).val() == '1') {
-		   		$('#myModal').modal('show');
-		   }
-		});
-	</script>
-	<script type="text/javascript" src="libraries/jssor.js"></script>
-    <script type="text/javascript" src="libraries/jssor.slider.min.js"></script>
-	<script type="text/javascript" src="libraries/jquery.marquee.js"></script>
-	<!-- Customized Scripts -->
-	<script src="js/functions.js"></script>
-	
-</body>
+ </body>
 </html>
+<script type="text/javascript">
+  $(document).ready(function(){
+    var current = 1;
+    
+    widget      = $(".step");
+    btnnext     = $(".next");
+    btnback     = $(".back"); 
+    btnsubmit   = $(".submit");
+
+    // Init buttons and UI
+    widget.not(':eq(0)').hide();
+    hideButtons(current);
+    setProgress(current);
+
+    // Next button click action
+    btnnext.click(function(){
+      if(current < widget.length){
+        widget.show();
+        widget.not(':eq('+(current++)+')').hide();
+        setProgress(current);
+      }
+      hideButtons(current);
+    })
+
+    // Back button click action
+    btnback.click(function(){
+      if(current > 1){
+        current = current - 2;
+        btnnext.trigger('click');
+      }
+      hideButtons(current);
+    })      
+  });
+
+  // Change progress bar action
+  setProgress = function(currstep){
+    var percent = parseFloat(100 / widget.length) * currstep;
+    percent = percent.toFixed();
+    $(".progress-bar").css("width",percent+"%").html(percent+"%");    
+  }
+
+  // Hide buttons according to the current step
+  hideButtons = function(current){
+    var limit = parseInt(widget.length); 
+
+    $(".action").hide();
+
+    if(current < limit) btnnext.show();
+    if(current > 1) btnback.show();
+    if (current == limit) { btnnext.hide(); btnsubmit.show(); }
+  }
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19096935-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
